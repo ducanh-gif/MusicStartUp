@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login & Register</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background">
+    <div class="login-card">
+      <div id="login-form" class="form-container active">
+        <h2>Welcome Back</h2>
+        <p>Please login to your account</p>
+        <form id="login">
+          <div class="input-group">
+            <input id="email" type="text" placeholder="Email" required />
+          </div>
+          <div class="input-group">
+            <input id="password" type="password" placeholder="Password" required />
+          </div>
+          <button type="submit">Login</button>
+       
+        </form>
+        <span class="toggle-link" onclick="showRegister()">Don't have an account? Register</span>
+      </div>
+
+      <div id="register-form" class="form-container">
+        <h2>Create Account</h2>
+        <p>Please fill in the details</p>
+        <form id="register">
+          <div class="input-group">
+            <input id="username" type="text" placeholder="Username" required />
+          </div>
+          <div class="input-group">
+            <input id="email2" type="email" placeholder="Email" required />
+          </div>
+          <div class="input-group">
+            <input id="password2" type="password" placeholder="Password" required />
+          </div>
+          <div class="input-group">
+            <input id="confirmpassword" type="password" placeholder="Confirm Password" required />
+          </div>
+          <button type="submit">Register</button>
+        </form>
+        <span class="toggle-link" onclick="showLogin()">Already have an account? Login</span>
+      </div>
+    </div>
+  </div>
+
+  
+<script src="login.js"></script>
+<script src="register.js"></script>
+</body>
+</html>

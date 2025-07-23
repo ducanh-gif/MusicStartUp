@@ -1,0 +1,125 @@
+ 
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .background {
+      height: 100vh;
+      background: linear-gradient(135deg, #3a6073, #16222a);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .login-card {
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 100%;
+      max-width: 400px;
+      color: #f1f1f1;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .login-card h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+      color: #ffffff;
+    }
+
+    .login-card p {
+      font-size: 14px;
+      margin-bottom: 30px;
+      color: #cccccc;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px 15px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      color: #ffffff;
+      font-size: 14px;
+      outline: none;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    .input-group input::placeholder {
+      color: #aaaaaa;
+    }
+
+    .input-group input:focus {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 0 2px #4fc3f7;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: #4fc3f7;
+      color: #fff;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background: #03a9f4;
+      transform: translateY(-2px);
+    }
+
+    .footer {
+      margin-top: 15px;
+    }
+
+    .footer a {
+      color: #aaaaaa;
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .toggle-link {
+      margin-top: 20px;
+      display: block;
+      font-size: 13px;
+      color: #aaa;
+      cursor: pointer;
+    }
+
+    .toggle-link:hover {
+      color: #fff;
+    }
+
+    .form-container {
+      display: none;
+    }
+
+    .form-container.active {
+      display: block;
+    }
+  
