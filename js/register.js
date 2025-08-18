@@ -69,7 +69,8 @@ function register(){
                 id :  Number(users[users.length - 1].id) + 1,
                 email,
                 password,
-                username
+                username,
+                joinDate: new Date().toISOString().split('T')[0],
             }
         ) ;
         localStorage.setItem("users", JSON.stringify(users))
@@ -82,6 +83,8 @@ function register(){
             email,
             password,
             username,
+            joinDate: new Date().toISOString().split('T')[0],
+
         });
         localStorage.setItem("users", JSON.stringify(users))
     }

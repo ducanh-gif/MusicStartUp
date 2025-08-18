@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Settings</title>
+  <title>Chi tiết Album</title>
   <link rel="stylesheet" href="../css/index.css" />
-  <link rel="stylesheet" href="../css/setting.css" />
-  <link rel="stylesheet" href="../css/audio.css" />
-</head>
-<body>
-<header>
-  <h1>⚙️ Settings</h1>
- <nav>
+    <link rel="stylesheet" href="../css/albums-songs.css" />
+    <link rel="stylesheet" href="../css/audio.css">
+<nav>
   <div class="nav-left">
     <a href="../index/index.html">Home</a>
     <a href="../index/playlist.html">Playlists</a>
@@ -30,43 +26,27 @@
     <button class="logout-btn"><span>🚪</span>Log out</button>
   </div>
 </nav>
-</header>
-
-
-<section class="settings-content">
-  <h2>⚙️ Cài đặt chung</h2>
-  
-
-  <div class="setting-item">
-    <span>Chế độ tối</span>
-     <small class="setting-note">Bật giao diện màu tối để bảo vệ mắt.</small>
-    <label class="toggle-switch">
-      <input type="checkbox" />
-      <span class="slider"></span>
-    </label>
+</head>
+<body>
+  <div class="album-header">
+    <img id="album-poster" src="" alt="Album Poster">
+    <div class="album-title" id="album-title">Tên Album</div>
   </div>
 
-  <div class="setting-item">
-    <span>Thông báo</span>
-     <small class="setting-note">Nhận thông báo cập nhật mới nhất từ trang web.</small>
-    <label class="toggle-switch">
-      <input type="checkbox" checked />
-      <span class="slider"></span>
-    </label>
-  </div>
+  <table class="song-list" id="song-list">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Thumbnail</th>
+        <th>Bài hát</th>
+        <th>Tác giả</th>
+      </tr>
+    </thead>
+    <tbody id="song-table-body">
+      <!-- Songs will be injected here -->
+    </tbody>
+  </table>
 
-  <div class="setting-item">
-    <span>Tự động phát</span>
-     <small class="setting-note">Tự động phát bài hát tiếp theo khi kết thúc bài hiện tại.</small>
-    <label class="toggle-switch">
-      <input type="checkbox" />
-      <span class="slider"></span>
-    </label>
-  </div>
-
-  
-  <button type="button" onclick="alert('Lưu cài đặt thành công!')">Lưu cài đặt</button>
-</section>
 
 <div id="player-banner" class="player-banner">
   <img id="player-thumbnail" src="" alt="thumbnail" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
@@ -85,7 +65,10 @@
       <img id="favorite-icon" src="../asset/favorite_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt="Favorite" style="width: 24px; height: 24px;">
     </button>
 </div>
-<script src="../js/audio.js"></script>
 
+
+
+<script src="../js/albums-songs.js"></script>
+<script src="../js/audio.js"></script>
 </body>
 </html>

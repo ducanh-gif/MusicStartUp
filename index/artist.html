@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
@@ -6,6 +6,7 @@
   <title>Artist - My Music</title>
   <link rel="stylesheet" href="../css/index.css" /> 
     <link rel="stylesheet" href="../css/artist.css" />
+    <link rel="stylesheet" href="../css/audio.css" />
 </head>
 <body>
 
@@ -76,6 +77,24 @@
   </section>
 
 </main>
+<div id="player-banner" class="player-banner">
+  <img id="player-thumbnail" src="" alt="thumbnail" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+  <div id="now-playing-info"></div>
+    
+  <div class="custom-audio-player">
+    <audio id="audio-player" ></audio>
+ <button id="play-pause">
+ <img src="../asset/media-player-music-pause-svgrepo-com.svg" alt="Play/Pause" style="width: 24px; height: 24px;"> 
+</button>
+    <span id="current-time">00:00</span>
+    <input type="range" id="seek-bar" value="0" step="1">
+    <span id="duration">00:00</span>
+  </div>
+   <button id="favorite-btn" style="background: none; border: none; cursor: pointer;">
+      <img id="favorite-icon" src="../asset/favorite_24dp_75FBFD_FILL0_wght400_GRAD0_opsz24.svg" alt="Favorite" style="width: 24px; height: 24px;">
+    </button>
+</div>
+<script src="../js/audio.js"></script>
 
 </body>
-</html>
+</html> -->
