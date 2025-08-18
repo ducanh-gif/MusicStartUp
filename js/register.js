@@ -1,6 +1,3 @@
-    if (localStorage.getItem("currentUser")){
-      location.href='./index.html'
-    }
 
 function checkPassword (checkPassword) {
     let lowerCaseLetter = /[a-z]/g;
